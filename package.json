@@ -10,8 +10,8 @@
     "test": "jest",
     "lint": "eslint --fix",
     "format": "prettier --write '*/**/*.{js,ts,json}'",
-    "predeploy": "npm run clean && npm run format && npm run lint && npm run test",
-    "deploy": "npm run predeploy && npm run build && serverless deploy"
+    "predeploy": "npm run format && npm run lint && npm run test",
+    "deploy": "npm run predeploy && npm run clean && npm run build && serverless deploy"
   },
   "keywords": [
     "aws",
