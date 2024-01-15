@@ -17,7 +17,7 @@ with [simple test cases](./src/use-cases/text-processing/count-words-by-category
 By the way, I've detected a conflict in the requirements (at least I treat it as such). Some words from dictionary
 consist of two words separated with space. Since the delimiter of input is also a space there will be no entries
 consisting of multiple words because everything is split by space character. Example: pronoun "no one" consists of "no"
-(interjection) and "one" (numeral), thus algorithm will increment fields *interjection* but *numeral* and *pronoun* will
+(interjection) and "one" (numeral), thus algorithm will increment fields *interjection* and *numeral* but *pronoun* will
 remain unchanged.
 
 ---
