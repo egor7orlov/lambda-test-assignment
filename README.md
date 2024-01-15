@@ -4,7 +4,7 @@
 
 #### Prerequisites
 
-- [*Serverless*](https://www.serverless.com/) installed and configured
+- [*Serverless*](https://www.serverless.com/) installed and (if needed) configured
 
 #### Backend
 
@@ -20,7 +20,9 @@ npm run dev
 
 ```shell
 cd frontend
- 
+
+touch .env && echo "VITE_API_URL=http://localhost:3000/dev" > .env 
+
 npm install
 
 npm run dev

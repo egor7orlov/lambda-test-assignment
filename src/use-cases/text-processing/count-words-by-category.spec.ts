@@ -45,7 +45,6 @@ describe('CountWordsByCategoryUseCase', () => {
       'qwe',
       'jkl',
     ].join(DELIMITER);
-    console.log(text);
     const expectedResult = {
       [WordCategory.NOUN]: wordsByCategory.noun.length * 2,
       [WordCategory.VERB]: wordsByCategory.verb.length,
