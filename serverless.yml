@@ -1,0 +1,29 @@
+org: egor7orlov
+app: lambda-test-assignment
+service: lambda-test-assignment
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+plugins:
+  - serverless-offline
+
+package:
+  individually: true
+  exclude:
+    - node_modules/**
+    - src/**
+    - test/**
+    - '*.spec.*'
+    - '*.ts'
+    - 'webpack.config.js'
+
+functions:
+  count-words-by-category:
+    handler: dist/index.countWordsByCategory.handler
+    events:
+      - http:
+          path: /count-words-by-category
+          method: post
